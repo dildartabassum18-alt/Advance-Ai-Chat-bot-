@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Gemini AI Chatbot Pro",
+  "description": "A personalized, multi-language AI chatbot with voice support and smart memory, powered by Google's Gemini API.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

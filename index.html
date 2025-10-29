@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini AI Chatbot Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#4f46e5',
+              'primary-hover': '#4338ca',
+              'secondary': '#10b981',
+              'light-bg': '#f3f4f6',
+              'light-surface': '#ffffff',
+              'light-text': '#1f2937',
+              'light-text-secondary': '#6b7280',
+              'dark-bg': '#111827',
+              'dark-surface': '#1f2937',
+              'dark-text': '#f9fafb',
+              'dark-text-secondary': '#9ca3af',
+            },
+            animation: {
+              'spin-slow': 'spin 3s linear infinite',
+              'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'slide-in': 'slide-in 0.3s ease-out forwards',
+            },
+            keyframes: {
+              'slide-in': {
+                '0%': { transform: 'translateX(100%)' },
+                '100%': { transform: 'translateX(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <!-- File Parsing Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script>pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js`;</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.16/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
